@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+
+.logoo{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+.logoo img{
+    width: 400px;
+    
+}
+
+.menu{
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.menu a{
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu a:hover{
+    color: #74b62e;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.titulo{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    background-color: #063b29;
+}
+
+.titulo h2{
+    font-family: Voga;
+    font-size: 100px;
+    color: white;
+    padding-top: 20px;
+    letter-spacing: 10px;
+}
+.titulo p{
+    padding-top: 15px;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    padding-left: 450px;
+    padding-top: 50px;
+    text-align: justify;
+    padding-bottom: 50px;
+}
+
+.cuadrote{
+    padding: 20px;
+    width: 50%;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.cuadrito {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-left: 160px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.resultado{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #33622c;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer .redes {
+    margin: 10px 0;
+  }
+  .footer .redes a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  .footer .redes a:hover {
+    color: #607d3d;
+    font-weight: bold;
+  }
+  .footer .links {
+    margin: 20px 0;
+  }
+  .footer .links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  .footer .links a:hover {
+    text-decoration: underline;
+  }
+  .footer p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .logoo img {
+        width: 250px;
+    }
+
+    .titulo h2 {
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+
+    .titulo p {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .cuadrote {
+        width: 90%;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    select {
+        padding: 5px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="Logos de Green garden 2 (1).ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Green Garden</title>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="logoo">
+            <a href="index.html" class="logo">
+                <img href="index.html" src="Logos de Green garden 3.png" alt="">
+            </a>
+        </div>
+
+    </div>
+
+    <div class="menu">
+        <a href="tipos.html">Tipos de plantas</a>
+        <a href="cultivos.html">Cultivo</a>
+        <a href="index2.html">Cuidados</a>
+        <a href="index3.html">Mantenimineto</a>
+        <a href="test.html">Test: ¿Qué me recomiendas plantar?</a>
+    </div>
+
+    <div class="titulo">
+        <h2>¿QUÉ ME RECOMIENDAS PLANTAR?</h2>
+        <p>Describe tu espacio y te daremos opciones de cultivos/plantas para plantar</p>
+    </div>
+
+    <body>
+        <div class="container">
+            <div class="cuadrote">
+                <div class="cuadrito">
+                    <label>Qué tanto espacio tienes en tu casa?</label>
+                    <select id="espacio">
+                        <option value="pequeño">Pequeño (como un alféizar)</option>
+                        <option value="mediano">Mediano (como un balcón)</option>
+                        <option value="grande">Grande (como un jardín)</option>
+                    </select>
+                </div>
+                <button type="button" onclick="test()">Calcular</button>
+                <div id="resultado" class="resultado"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="redes">
+                <a href="https://facebook.com">Facebook</a>
+                <a href="https://twitter.com">Twitter</a>
+                <a href="https://instagram.com">Instagram</a>
+            </div>
+            <div class="links">
+                <a href="index.html">Inicio</a>
+                <a href="tipos.html">Tipos de plantas</a>
+                <a href="cultivos.html">Cultivos</a>
+                <a href="index2.html">Cuidados</a>
+                <a href="index3.html">Mantenimiento</a>
+                <a href="test.html">Test: ¿Qué me recomiendas plantar?</a>
+            </div>
+            <p>&copy; 2024 Laboratorio. Mélani Morales, Gefrey Tzunux y Carlos Sagüil.</p>
+        </div>
+    
+        <script>
+            function test() {
+                var espacio = document.getElementById('espacio').value
+                var resultado = document.getElementById('resultado')
+    
+                if (espacio === 'pequeño') {
+                     var salida = "Puedes plantar hierbas como albahaca, menta o cebollin.";
+                     
+                }else if (espacio === 'mediano') {
+                     var salida = "Puedes plantar vegetales pequeños como tomates cherry, pimientos y lechuga.";
+                }else if (espacio === 'grande') {
+                    var salida = "Puedes plantar verduras o frutas más grandes como tomates, calabacines o fresas.";
+                }
+    
+                resultado.innerHTML = `<p>${salida}</p>` ;
+            }
+        </script>
+    </body>
+    </html>
+
+</body>
+</html>
